@@ -159,8 +159,14 @@ aiRouter.get("/bulk",async (req,res)=>{
             }
         })
 
+        const resArr = [];
+        
+        for(let i=0;i<responses.length;i++){
+            resArr[i] = responses[i]?.response
+        }
+
         res.status(200).json({
-            responses
+            resArr
         })
     }
     catch(error:any){

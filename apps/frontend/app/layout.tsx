@@ -3,7 +3,6 @@ import "./globals.css";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/ui/app-slidebar";
 import Navbar from "@/components/ui/navbar";
-import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
   title: "Create Next App",
